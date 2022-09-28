@@ -69,6 +69,7 @@ namespace splatoon3Tester
                 debugger.poke32(baseHeap1Addr + money1, money);
                 debugger.poke32(baseHeap1Addr + money2, money);
                 MessageBox.Show($"Success");
+                debugger.close();
             }
             catch(Exception)
             {
