@@ -19,7 +19,7 @@ namespace splatoon3Tester.core
 
         private static NetworkStream ConnectSocket(string server, int port)
         {
-            IPEndPoint ipe = new IPEndPoint(IPAddress.Parse(server), port);
+            //IPEndPoint ipe = new IPEndPoint(IPAddress.Parse(server), port);
             Socket tempSocket =
                 new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             tempSocket.Connect(server, port);
